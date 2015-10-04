@@ -26,5 +26,6 @@ class User < ActiveRecord::Base
                 password: Devise.friendly_token[0,20])
   end
 
-
+    acts_as_followable
+    acts_as_follower
 end

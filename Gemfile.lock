@@ -63,6 +63,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts_as_follower (0.2.1)
     algoliasearch (1.6.1)
       httpclient (~> 2.4)
       json (>= 1.5.1)
@@ -676,6 +677,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  acts_as_follower
   acts_as_votable!
   algoliasearch
   bootstrap-sass (= 3.3.5)

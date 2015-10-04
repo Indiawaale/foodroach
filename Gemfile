@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'acts_as_follower'
 gem 'meetup_client'
 gem "algoliasearch"
 gem 'therubyracer'  #Adding it here for js runtime :P . Too lazy to install node

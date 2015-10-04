@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'social/create'
+
+  get 'social/notify'
+
+  get 'social/delete'
+
+  get 'social/index'
+
   get 'home/index'
 
   get '/register' => "home#register"
