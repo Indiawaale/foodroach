@@ -63,6 +63,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    algoliasearch (1.6.1)
+      httpclient (~> 2.4)
+      json (>= 1.5.1)
     arbre (1.0.3)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
@@ -99,6 +102,7 @@ GEM
       activesupport (>= 3.2, < 5)
     hashie (3.4.2)
     hike (1.2.3)
+    httpclient (2.6.0.1)
     i18n (0.7.0)
     inherited_resources (1.6.0)
       actionpack (>= 3.2, < 5)
@@ -122,6 +126,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meetup_client (0.0.8)
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (5.8.1)
@@ -672,6 +677,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   acts_as_votable!
+  algoliasearch
   bootstrap-sass (= 3.3.5)
   bootstrap-sass-extras
   bundler
@@ -679,6 +685,7 @@ DEPENDENCIES
   devise!
   jbuilder (~> 2.0)
   jquery-rails
+  meetup_client
   omniauth
   omniauth-facebook
   pry-rails

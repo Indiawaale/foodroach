@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'meetup_client'
+gem "algoliasearch"
 gem 'therubyracer'  #Adding it here for js runtime :P . Too lazy to install node
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
