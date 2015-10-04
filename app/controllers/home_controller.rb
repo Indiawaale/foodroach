@@ -2,6 +2,19 @@ require 'meetup_client'
 class HomeController < ApplicationController
     def index
     end
+
+
+    def gcm
+        begin
+            @user = User.find_by_email params[:userid]
+            @user.gcm = params[:gcm]
+            @user.save
+            render json: @user ,status: 200
+        rescue ActiveRecord::RecordInvalid => invalid
+            render json: "error", status: 500
+        end
+    end
+
     def register
         begin
             id = 0

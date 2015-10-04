@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'whenever'
+gem 'gcm'
 gem 'acts_as_follower'
 gem 'meetup_client'
 gem "algoliasearch"

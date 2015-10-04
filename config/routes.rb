@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'social/create'
 
+  get '/gcm' => "home#gcm"
   get 'social/notify'
 
   get 'social/delete'

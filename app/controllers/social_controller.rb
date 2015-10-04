@@ -1,3 +1,4 @@
+require 'gcm'
 class SocialController < ApplicationController
     def create
         @user = User.find_by_email(params[:userid])
@@ -15,6 +16,18 @@ class SocialController < ApplicationController
     end
 
     def notify
+        gcm = GCM.new("AIzaSyDGmpW2dJOFPOQy878EjpVjoEWuFNT9aG4")
+        users = User.all
+        registration_id = []
+        users.each do |user|
+            registration_id.push user.gcm
+        end
+        puts registration_id
+        data = `ruby ~/defg.rb`
+        options={:data => {:title => "Some message",:body=> data }}
+        puts options
+        response = gcm.send(registration_id, options)
+        puts response
     end
 
     def delete
