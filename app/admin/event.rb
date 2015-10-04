@@ -1,4 +1,5 @@
 ActiveAdmin.register Event do
+  permit_params :latitude, :longitude, :start_time, :end_time, :date, :alcohol, :title, :description
 
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
