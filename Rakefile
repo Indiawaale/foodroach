@@ -4,7 +4,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 desc 'Send notif'
-task send_gcm: :development do
+task send_gcm: :environment do
     abcd = SocialController.new
     abcd.notify
 end
